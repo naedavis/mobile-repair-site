@@ -1,0 +1,28 @@
+* {
+  /*star means it includes everything*/
+  padding: 0; /*no padding bc not all browsers open css the same so this needs to be done*/
+  /*padding is isside the box*/
+  margin: 0; /*no margins*/
+  /*margin is between the items*/
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+#social {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: aliceblue;
+  align-items: center;
+}
+#social > div {
+  /*using the div inside social bc the address and stuff are all in that one div*/
+  display: flex;
+  padding: 10px 10%; /*use percentage instead of pixels if you want it to look good on a phone and laptop*/
+}
+#social > div > p {
+  /*social in a div in the paragraph*/
+  margin-right: 20px; /*for spaces between the two paragraph stuff */
+}
